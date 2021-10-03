@@ -1,6 +1,9 @@
-//import { NotImplementedError } from '../extensions/index.js';
+import { NotImplementedError } from '../extensions/index.js';
 
-module.exports = function countCats(backyard) {
- return backyard.filter((el) => el.includes('^^')).length;
+export default function countCats(/* matrix */) {
+  function countCats(backyard) {
+    return backyard.filter((el) => el.includes('^^')).length;
+  }
 }
+
 
