@@ -1,7 +1,7 @@
 import { NotImplementedError } from '../extensions/index.js';
 
 export default function countCats(backyard) {
-  return backyard.filter((el) => el.includes('^^')).length;
+  return backyard.reduce((acc, el) => el.filter(item => item === '^^').length + acc, initial=0);
 }
 
 
