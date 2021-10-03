@@ -17,7 +17,7 @@ export default function createDreamTeam(/* members */) {
   throw new NotImplementedError('Not implemented');
   const createDreamTeam = (members) => {
     if (typeof(members) !== 'object') return false;
-    members = members.filter((el) => typeof(el) === 'string' && el.trim()[0].toUpperCase() === el.trim()[0]).sort().map(el => el[0]).join('');
-    return members ? members : false;
+    members = members.filter((el) => typeof(el) === 'string').map(el => el[0].toUpperCase()).sort().join('');
+    return members;
   }
 }
