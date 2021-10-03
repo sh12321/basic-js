@@ -16,5 +16,5 @@ import { NotImplementedError } from '../extensions/index.js';
  */
 export default function countCats(/* matrix */) {
   throw new NotImplementedError('Not implemented');
-  //const countCats = (backyard) => backyard.filter((el) => el.includes('^^')).length;
+  const countCats = (backyard) => backyard.filter((el) => el.includes('^^')).length;
 }
