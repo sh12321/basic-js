@@ -1,5 +1,3 @@
-import { NotImplementedError } from '../extensions/index.js';
-
 
 export default function createDreamTeam(members) {
   if (typeof(members) !== 'object') return false;
