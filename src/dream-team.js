@@ -15,5 +15,8 @@ import { NotImplementedError } from '../extensions/index.js';
  */
 export default function createDreamTeam(/* members */) {
   throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+  const createDreamTeam = (members) => {
+    members = members.filter((el) => typeof(el) === 'string' && el.trim()[0].toUpperCase() === el.trim()[0]).sort().map(el => el[0]).join('');
+    return members ? members : false;
+  }
 }
