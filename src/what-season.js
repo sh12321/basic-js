@@ -16,7 +16,6 @@ export default function getSeason(date) {
   let month;
   try {
     month = date.getMonth();
-    throw 'Invalid date!';
   } catch (e) {
     return 'Invalid date!';
   }
