@@ -17,7 +17,7 @@ export default function getSeason(date) {
   try {
     month = date.getMonth();
   } catch (e) {
-    return 'Invalid date!';
+    throw 'Invalid date!';
   }
   
   if (month === 11 || month < 2) return 'winter';
