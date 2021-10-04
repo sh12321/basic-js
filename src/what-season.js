@@ -16,8 +16,9 @@ export default function getSeason(date) {
   let month;
   try {
     month = date.getMonth();
-  } catch (e) {
     throw 'Invalid date!';
+  } catch (e) {
+    return 'Invalid date!';
   }
   
   if (month === 11 || month < 2) return 'winter';
